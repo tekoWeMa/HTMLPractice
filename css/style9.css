@@ -1,0 +1,19 @@
+.container {
+    display: grid;
+    width: 1200px;
+    margin: 0 auto; /* Zentriert den Container */
+    grid-template-columns: repeat(4, 1fr); /* Erstellt 4 gleich breite Spalten */
+    grid-template-rows: repeat(3, 400px); /* Erstellt 3 Zeilen mit jeweils 400px Höhe */
+    gap: 40px; /* Setzt den Abstand zwischen den Elementen */
+  }
+  
+  .item {
+    background-color: #f0f0f0; /* Beispielhafte Hintergrundfarbe für die Elemente */
+    /* Weitere Stile für die Items können hier hinzugefügt werden */
+  }
+  
+  .item-newest {
+    grid-column: span 2; /* Nimmt zwei Spalten ein */
+    grid-row: span 2; /* Nimmt zwei Zeilen ein */
+  }
+  

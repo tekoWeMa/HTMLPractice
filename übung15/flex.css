@@ -1,0 +1,53 @@
+/** Für Aufgabe 1 kannst du von hier... **/
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+/** ...bis hier CSS-Regeln hinzufügen. **/
+
+@media screen and (max-width: 786px) {
+    /* Der Code innerhalb dieser Klammern wird nur auf Bildschirmen
+       angezeigt, die weniger als 768px breit sind. */
+
+    /** Für Aufgabe 2 kannst du von hier... **/
+    .card.card-header {
+        order: 0;
+        flex-grow: 2;
+    }
+    .cards {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        align-items: center;
+
+
+        
+    }
+    /** ...bis hier CSS-Regeln hinzufügen. **/
+
+}
+
+@media screen and (max-width: 500px) {
+    /* Der Code innerhalb dieser Klammern wird nur auf Bildschirmen
+       angezeigt, die weniger als 480px breit sind. */
+
+    /** Für Aufgabe 3 kannst du von hier... **/
+    .card.card-header {
+        order: 0;
+    }
+    .cards {
+        order: 1;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    /** ...bis hier CSS-Regeln hinzufügen. **/
+
+}

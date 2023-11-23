@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anmeldeformular Firmenanlass</title>
+</head>
+<body>
+    <form action="/submit-form" method="post">
+        <fieldset>
+            <legend>Persönliche Informationen</legend>
+            <label for="firstName">Vorname:</label>
+            <input type="text" id="firstName" name="firstName" required><br><br>
+
+            <label for="lastName">Nachname:</label>
+            <input type="text" id="lastName" name="lastName" required><br><br>
+
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="street">Strasse:</label>
+            <input type="text" id="street" name="street" required><br><br>
+
+            <label for="zipCity">PLZ und Ort:</label>
+            <input type="text" id="zipCity" name="zipCity" required><br><br>
+
+            <label for="phone">Telefonnummer:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Zusätzliche Informationen</legend>
+            <label for="subscription">Abo:</label>
+            <select id="subscription" name="subscription">
+                <option value="none">Kein Abo</option>
+                <option value="ga">GA</option>
+                <option value="halbtax">Halbtax</option>
+                <option value="routePass">Streckenabo Luzern-Zürich</option>
+            </select><br><br>
+
+            <label for="dinnerMenu">Abendessen Menü:</label>
+            <select id="dinnerMenu" name="dinnerMenu">
+                <option value="menu1">Menü 1</option>
+                <option value="menu2">Menü 2</option>
+            </select><br><br>
+
+            <label for="overnightStay">Übernachtung:</label>
+            <input type="radio" id="withStay" name="overnightStay" value="with">
+            <label for="withStay">Mit</label>
+            <input type="radio" id="withoutStay" name="overnightStay" value="without" checked>
+            <label for="withoutStay">Ohne</label><br><br>
+
+            <label for="roomType">Zimmerart:</label>
+            <input type="radio" id="singleRoom" name="roomType" value="single">
+            <label for="singleRoom">Einzelzimmer</label>
+            <input type="radio" id="doubleRoom" name="roomType" value="double">
+            <label for="doubleRoom">Doppelzimmer</label>
+        </fieldset>
+
+        <label for="remarks">Bemerkungen:</label><br>
+        <textarea id="remarks" name="remarks" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Anmelden">
+    </form>
+</body>
+</html>

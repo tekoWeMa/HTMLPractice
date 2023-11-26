@@ -149,7 +149,7 @@ nav {
 }
 
 nav > div {
-  /* display: none; */
+   display: none; 
   position: absolute;
   left: 32px;
   top: -52px;
@@ -240,16 +240,19 @@ footer p {
   }
 
   nav ul {
-    display: none;
+    /* display: none; */
     position: absolute;
     top: -17px;
-    left: 32px;
+    /* left: 32px; */
+    left: -16em;
     margin: 0;
     padding-left: 0;
+    transition: left 1s ease-in-out;
   }
 
   nav:hover ul {
-    display: block;
+    /* display: block; */
+    left: 32px;
   }
 
   nav ul li a {

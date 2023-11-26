@@ -148,8 +148,8 @@ nav {
   position: relative;
 }
 
-nav>div {
-  display: none;
+nav > div {
+  /* display: none; */
   position: absolute;
   left: 32px;
   top: -52px;
@@ -160,7 +160,6 @@ nav>div {
   line-height: 36px;
   color: white;
 }
-
 main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -230,44 +229,43 @@ footer p {
 
 @media (max-width: 75em) {
   header {
-      margin-top: 0;
+    margin-top: 0;
   }
 }
 
 @media (max-width: 960px) {
+
   nav {
-      height: 0;
+    height: 0;
   }
 
   nav ul {
-      /* display: none; */
-      position: absolute;
-      top: -17px;
-      /* left: 32px; */
-      left: -16em;
-      margin: 0;
-      padding-left: 0;
-      transition: left 1s ease-in-out;
+    display: none;
+    position: absolute;
+    top: -17px;
+    left: 32px;
+    margin: 0;
+    padding-left: 0;
   }
 
   nav:hover ul {
-      /* display: block; */
-      left: 32px;
+    display: block;
   }
 
   nav ul li a {
-      background-color: white;
-      line-height: 1em;
-      padding: 0.4em 35px;
+    background-color: white;
+    line-height: 1em;
+    padding: 0.4em 35px;
   }
 
-  nav>div {
-      display: block;
+  nav > div {
+    display: block;
   }
 
   main {
-      grid-template-columns: 16px repeat(2, 1fr);
+    grid-template-columns: 16px repeat(2, 1fr);
   }
+
 }
 
 @media (max-width: 760px) {
